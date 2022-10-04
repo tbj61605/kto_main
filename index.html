@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kto main page</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+
+<body>
+
+<div  class="contents">
+   
+    <header>
+        <div><a href="#"><img src="img/Untitled-5.png" alt="logo-img"></a>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#">ABOUT KTO</a>
+                        <div>
+                            <a href="#">회사 소개</a>
+                            <a href="#">CEO</a>
+                            <a href="#">HISTORY</a>
+                            <a href="#">CI</a>
+                            <a href="#">오시는 길</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">TRAVEL</a>
+                        <div>
+                            <a href="#">홍보 해드려요</a>
+                            <a href="#">추천 해주세요</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">CAREER</a>
+                        <div>
+                            <a href="#">바로 당신입니다</a>
+                            <a href="#">일자리 함께해요</a>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+
+            </nav>
+
+            <!--날씨 줄때는 ul,nav에서 완전빠져서 따로 줘야함-->
+        </div>
+    </header>
+    <!-- ================================================================================= -->
+
+    <main>
+     
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="main_txt_1">
+                        <h2>한국관광공사</h2>
+                        <p>대한민국을<br> 관광강국으로 만들겠습니다</p>
+                    </div>
+                    <p class="slide-img"><img src="img/1main.png" alt="slide"></p>
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="main_txt_2">
+                        <h2>수준 높은 문화관광</h2>
+                    </div>
+                    <p class="slide-img"><img src="img/2korea.png" alt="slide"></p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main_txt_3">
+                        <h2>"함께해요."<br>
+                            한국관광공사</h2>
+                    </div>
+                    <p class="slide-img"><img src="img/3.treavel.png" alt="slide"></p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main_txt_4">
+                        <p> 발길이 머무는 곳마다, 눈길이 닿는 곳마다, 색다르고 독특한 체험으로 방문자 모두에게 기대 이상의 경험을 선사하겠습니다
+                        </p>
+                        <h3>한국관광공사</h3>
+                    </div>
+                    <p class="slide-img"><img src="img/4dogi.png" alt="slide"></p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main_txt_5">
+                        <h3>대한민국, 세계인을 사로잡다.</h3>
+                    </div>
+
+                    <p class="slide-img"><img src="img/5sss.png" alt="slide"></p>
+                </div>
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+     
+        <!-- ----------------------------------------------------------------------------------------- -->
+
+        <section class="main2">
+            <h2>Welcome! KTO 함께해요 &nbsp; 한국관광공사</h2>
+            <div>
+                <figure>
+                    <figcaption>ABOUT KTO </figcaption>
+
+                    <a href="#"> <img src="img/logo2.png" alt="logo-img"></a>
+                </figure>
+                <figure>
+                    <figcaption>TEAVEL <br>WITH ME! </figcaption>
+                    <a href="#"><img src="img/travel-2.png" alt="travel"></a>
+                </figure>
+                <figure>
+                    <figcaption>CAREER AT <br>KTO</figcaption>
+                    <a href="#"> <img src="img/career2.png" alt="career"></a>
+                </figure>
+                <figure>
+                    <figcaption>MAP </figcaption>
+                    <a href="#"><img src="img/MAP2.png" alt="map"></a>
+                </figure>
+            </div>
+        </section>
+
+        <!-- figure,  </figcaption> 수정하기!!!-->
+
+        <div>
+            <iframe width="100%" height="900px" src="https://www.youtube.com/embed/QEXPYsaWRZA "
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen name="if"></iframe>
+            <!--백그라운드 안맞을때
+div , iframe 인라인 요소-> 
+div{ font-size:0} or iframe vertical-align: ; 값주면  ok
+영상이랑 같이 묶으면 탑 0 위치 영상에서 부터 시작해서 위치값 주기 어려움 -->
+        </div>
+ 
+        <section class="main3">
+            <!-- 섹션태그 바로 아래에 H태그 있어야함 /안그러면 오류 컴터가 인식 잘 못함-->
+
+            <p> LOVE KOREA LOVE KTO LOVE KOREA LOVE KTO
+                LOVE KOREA LOVE KTO LOVE KOREA LOVE KTO
+            </p>
+
+            <p>
+                LOVE KOREA LOVE KTO LOVE KOREA LOVE KTO
+                LOVE KOREA LOVE KTO LOVE KOREA LOVE KTO
+            </p>
+            <p>
+                LOVE KOREA LOVE KTO LOVE KOREA LOVE KTO
+                LOVE KOREA LOVE KTO LOVE KOREA LOVE KTO
+            </p>
+            <!--글자 흘러가게 애니메이션 글자한줄로-> 플렉스 ?? 안되서
+            white-space:nowrap; /*텍스트 줄바꿈 안되게*/ 이렇게 함-->
+            <div class="deco">
+                <img src="img/deco-main1.png" alt="deco1">
+                <img src="img/deco2.png" alt="deco2">
+                <img src="img/deco-main3.png" alt="deco3">
+            </div>
+
+
+
+        </section>
+
+      
+        <div class="slide">
+            <div>
+                <img src="img/footer-slide-img.png" alt="slide-img1">
+                <p>
+                    다시 떠나는 여행<br>
+
+                    국민 일상회복 지원과<br>
+                    지속가능한 여행 <br>
+                    선도 지역으로 떠나는 여행<br>
+
+                    새로운 콘텐츠를 통한<br>
+                    지역관광 활성화
+
+                    함께 떠나는 여행<br>
+
+                    누구나 안전하게,<br>
+                    함께 누리는 관광복지 확대
+                </p>
+
+            </div>
+
+            <!-- 스크롤내릴때 걸리면서 그림 슬라이드-> 스크롤에 걸리는 효과 모두 자바스트랩-->
+
+        </div>
+
+
+    </main>
+
+    <div class="top-btn">
+        <p>
+            <span>
+                <a href="./index.html"><img src="img/TOP btn.png" alt="top-btn"></a>
+            </span>
+        </p>
+    </div>
+
+
+
+
+
+    <footer>
+
+        <div>
+            <P class="logo"> <img src="img/Untitled-5.png" alt="logo-img"></P>
+            <p class="icon">
+                <span>
+                    <a href="#">youtube</a>
+                    <a href="#">instagrm</a>
+                    <a href="#">facebook</a>
+                </span>
+            </p>
+
+
+            <div class="footer-img">
+                <!--위드 사이즈 맞추고 오버 플로어 히든으로 감추기  , 애니메이션으로 효과 줘보기 -->
+                <p class="f-img">
+                    <a href="#"><img src="img/footerimg/1.gif" alt="footer1"></a>
+                    <a href="#"><img src="img/footerimg/2.gif" alt="footer2"></a>
+                    <a href="#"><img src="img/footerimg/3.gif" alt="footer3"></a>
+                    <a href="#"><img src="img/footerimg/4.gif" alt="footer4"></a>
+                    <a href="#"><img src="img/footerimg/5.gif" alt="footer5"></a>
+                    <a href="#"><img src="img/footerimg/6.gif" alt="footer6"></a>
+                    <a href="#"><img src="img/footerimg/7.gif" alt="footer7"></a>
+                    <a href="#"><img src="img/footerimg/8.gif" alt="footer8"></a>
+                    <a href="#"><img src="img/footerimg/9.gif" alt="footer9"></a>
+                    <a href="#"><img src="img/footerimg/10.gif" alt="footer10"></a>
+                    <a href="#"><img src="img/footerimg/11.gif" alt="footer11"></a>
+                    <a href="#"><img src="img/footerimg/12.jpg" alt="footer12"></a>
+                    <a href="#"><img src="img/footerimg/13.gif" alt="footer13"></a>
+                    <a href="#"><img src="img/footerimg/14.gif" alt="footer14"></a>
+                    <a href="#"><img src="img/footerimg/15.gif" alt="footer15"></a>
+                    <a href="#"><img src="img/footerimg/16.gif" alt="footer16"></a>
+                    <a href="#"><img src="img/footerimg/17.jpg" alt="footer17"></a>
+                    <a href="#"><img src="img/footerimg/18.gif" alt="footer18"></a>
+                    <a href="#"><img src="img/footerimg/19.gif" alt="footer19"></a>
+                    <a href="#"><img src="img/footerimg/20.jpg" alt="footer20"></a>
+                    <a href="#"><img src="img/footerimg/21.jpg" alt="footer21"></a>
+                    <a href="#"><img src="img/footerimg/22.gif" alt="footer22"></a>
+                    <a href="#"><img src="img/footerimg/23.gif" alt="footer23"></a>
+                    <a href="#"><img src="img/footerimg/24.gif" alt="footer24"></a>
+                    <a href="#"><img src="img/footerimg/25.gif" alt="footer25"></a>
+
+                </p>
+
+            </div>
+
+
+            <div class="f-txt">
+                <P>개인정보처리방침 저작권정책 고객 서비스현장
+                    전자우편 무단수집거부
+                    HELP DESK
+                    고객의 소리
+                    홈페이지 불편신고
+                </P>
+                <P>
+                    26464 강원도 원주시 세계로 10 TEL : (033)738-3000 사업자등록번호 : 202-81-50707
+                    통신판매업신고 : 제 2009-서울중구-1234 Copyright © KTO. ALL RIGHT RESERVED.
+
+                </P>
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+
+ 
+</div>
+    <!-- --------------------------------------------------------------------
+     스크롤 효과  -->
+<!-- <script>
+
+
+   const domHeight =  $('.contents').height();
+        $('body').height(domHeight);
+
+        let offsetTop = [
+            $('section').eq(0).offset().top,
+            $('section').eq(1).offset().top,
+            $('section').eq(2).offset().top,
+            $('section').eq(3).offset().top,
+            $('section').eq(4).offset().top
+        ];
+        let idx = 0, play;
+        let scrollState = {y:0,y2:0,state:'down'}
+
+        function scrollFun(){
+            scrollState.y = $(window).scrollTop();
+            if(scrollState.y > scrollState.y2){
+                scrollState.state = true;  
+            }else{
+                scrollState.state = false;
+            }
+            scrollState.y2 = scrollState.y;
+        }
+
+        $(window).on('scroll',function(){
+            scrollFun();
+
+            clearTimeout(play);
+            play = setTimeout(function(){
+
+                scrollState.state ? idx++ : idx--;
+
+                $('.contents').css({
+                    transform:`translateY(-${offsetTop[idx]}px)`
+                });
+
+                // $('aside a').removeClass('active')
+                // .eq(idx).addClass('active');
+
+            },50);            
+
+        })
+</script> -->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

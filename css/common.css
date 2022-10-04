@@ -1,0 +1,175 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll; /*->가로 스크롤 없앰*/
+
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+  
+    margin: 20px 0 0 40px;
+    position: absolute;
+    width: 95%;
+    z-index: 2;
+
+    /* margin: 0 auto; */
+}
+
+
+.swiper mySwiper {
+    position: relative;
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px auto; */
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+header > div > a {
+    color: black;
+}
+header > div > a > img {
+    width: 150px;
+}
+
+.menu {
+    padding-left: 60%;
+}
+.menu > ul {
+    display: flex;
+}
+.menu > ul > li {
+    position: relative;
+}
+.menu > ul > li > a {
+    display: inline-block;
+    padding: 0 50px;
+    color: black;
+}
+.menu > ul > li a {
+    font-size: 12px;
+    color: white;
+}
+.menu > ul > li > div {
+    background-color: rgba(255, 255, 255, 0.356);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    display: none;
+    transition: 1s;
+    width: 100%;
+}
+.menu > ul > li > div > a {
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+
+.menu > ul > li:hover > div {
+    display: block;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+footer {
+    background-color: #0a1331;
+    width: 100%;
+    /* padding-top: 13%; */
+}
+
+.logo {
+    text-align: center;
+    padding-top: 8%;
+}
+.logo > img {
+    width: 200px;
+}
+
+.icon {
+    display: inline-block;
+
+    margin: -4% 0 2% 83%;
+}
+
+.icon > span {
+}
+.icon > span > a {
+    vertical-align: middle;
+    font-size: 0;
+    display: inline-block;
+    width: 35px;
+    height: 50px;
+    background: url("../img/sns.png") no-repeat;
+}
+
+.icon > span > a:nth-child(1) {
+    background-position: -8px;
+}
+.icon > span > a:nth-child(2) {
+    background-position: -45px;
+}
+.icon > span > a:nth-child(3) {
+    background-position: -80px;
+}
+
+.footer-img {
+    width: 80%;
+    height: 41px;
+   
+    overflow: hidden;
+    margin: 0 auto;
+}
+/* 이미지에 말고 이미지 싸고 있는 div에 크기값주기 */
+.f-img {
+}
+
+.f-img > a > img {
+    height: 41px;
+}
+
+.f-img > a {
+}
+
+.f-txt {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.f-txt > p {
+}
+.f-txt > p:nth-child(1) {
+}
+.f-txt > p:nth-child(2) {
+}
+
+.weather {
+    color: white;
+   
+}
